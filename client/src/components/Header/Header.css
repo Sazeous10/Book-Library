@@ -1,0 +1,83 @@
+.header-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(to right, #1976d2, #42a5f5);
+	color: white;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	z-index: 1000; /* Ensure it's above all content */
+}
+
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	width: 92%;
+}
+
+.logo {
+	font-size: 2rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.cart-section {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.cart-text {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.cart-icon {
+	position: relative;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.cart-count {
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	background: #ffeb3b;
+	color: black;
+	border-radius: 50%;
+	padding: 4px 8px;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.nav-bar {
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.nav-bar button {
+	background: white;
+	color: #1976d2;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 6px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.3s, color 0.3s;
+}
+
+.nav-bar button:hover {
+	background: #1565c0;
+	color: white;
+}
+
+.nav-bar .active {
+	background: #0d47a1;
+	color: white;
+}
