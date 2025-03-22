@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const cors = require('cors');
 
-mongoose.connect('mongodb://localhost:27017/', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('<Your MongoDB Connection String>', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(express.json());
 app.use(cors()); // Use the cors middleware
